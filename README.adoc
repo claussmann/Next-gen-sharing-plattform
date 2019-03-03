@@ -8,21 +8,6 @@ Die Anwendung kann mit 'docker-compose up --build' gebaut werden,
 danach mit 'docker-compose up' gestartet werden.
 Erreichbar ist die Seite unter localhost:8080/
 
-==== Data-Faker
-
-Beim ersten Start des Programms wird die Datenbank mit Dummy-Daten
-gefüllt um den Initialprozess abzukürzen. +
-Das Passwort für alle Dummy Nutzer ist: 123 +
-Mögliche Usernames mit Role user: jackeline.rath, annamae.mohr, cora.cartwright
-Admin-Account: admin , Admin-Password: 123
-
-Es werden zudem Contracts zwischen Usern erstellt.
-Bei jackeline.rath findet man zudem eine seit langem fällige
-Abgabe, bei der man auch das Banner sehen kann.
-Sollte ProPay zum Programmstart nicht gestartet sein, so werden
-zwar die Fake-User erstellt, allerdings wird ihnen kein Guthaben hinzugefügt
-und es werden keine Contracts erstellt.
-
 ==== User-Erstellung
 
 Es können neue Nutzer erstellt werden, dies geschieht über den 'Sign up'
