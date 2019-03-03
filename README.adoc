@@ -12,6 +12,7 @@ Erreichbar ist die Seite unter localhost:8080/
 
 Es können neue Nutzer erstellt werden, dies geschieht über den 'Sign up'
 Button.
+Der Benutzer "admin" mit passwort "admin" wird vom System angelegt.
 
 ==== Main Page
 
@@ -37,7 +38,7 @@ Die Profile Page des Users enthält alle Infos zu jeglichen:
 
 ==== Konflikte
 
-Konflikte werden nicht vom Data-Faker erstellt. Diese werden über die
+Konflikte werden über die
 Profile Page eröffnet, indem man auf den entsprechenden Contract klickt. +
 Die anzeigen verändern sich entsprechend vorliegender Konflikte.
 Der Admin bekommt alle offenen Konflikte angezeigt, sobald er in seinem
