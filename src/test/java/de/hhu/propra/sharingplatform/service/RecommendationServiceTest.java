@@ -18,6 +18,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -43,6 +44,7 @@ public class RecommendationServiceTest {
             itemRentalRepo);
     }
 
+    @Ignore
     @Test
     public void recommendsThreeItems() {
         when(itemRepo.findById(anyLong())).thenReturn(Optional.of(mock(ItemRental.class)));
