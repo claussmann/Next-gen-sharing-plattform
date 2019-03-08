@@ -44,12 +44,24 @@ public class RecommendationService {
      */
 
     public List<Item> findRecommendations(long itemId) {
-        Item item = (Item) itemRepo.findById(itemId).get();
+        List<Item> list = itemRepo.findAllByDeletedIsFalse();
+        List<Item> ret = new ArrayList<>();
+
+        Random random = new Random();
+
+        ret.add(list.get(random.nextInt(list.size())));
+        ret.add(list.get(random.nextInt(list.size())));
+        ret.add(list.get(random.nextInt(list.size())));
+
+        return ret;
+
+        //TODO: Fix this:
+        /*Item item = (Item) itemRepo.findById(itemId).get();
         List<BorrowContract> contracts = borrowContractRepo.findAllByItem(item);
         List<User> otherBorrowers = findOtherBorrowers(contracts);
         Map<Item, Integer> map = fillMap(otherBorrowers);
 
-        return findBestItems(map, itemId);
+        return findBestItems(map, itemId);*/
     }
 
     /**
