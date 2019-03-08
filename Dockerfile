@@ -1,10 +1,12 @@
 FROM openjdk:8-jdk-alpine as build
 
+RUN apk add gradle
+
 WORKDIR /app
 
 COPY . .
 
-RUN ./gradlew build
+RUN gradle bootjar
 
 
 
